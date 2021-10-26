@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .box {
+            width: 1513px;
+            height: 755px;
+            background-color: rgb(245, 245, 245);
+            margin: 50px auto;
+        }
+        
+        .dahezi {
+            float: left;
+            background-color: pink;
+            width: 322px;
+            height: 755px;
+        }
+        
+        .youhezi {
+            float: right;
+            background-color: #fff;
+            width: 1172px;
+            height: 755px;
+        }
+        
+        .youhezi .shangpian li {
+            float: left;
+            background-color: pink;
+            width: 278px;
+            height: 365px;
+            margin: 0px 16px 16px 0px;
+        }
+        
+        .youhezi .xiapian li {
+            float: left;
+            background-color: pink;
+            width: 278px;
+            height: 365px;
+            margin-right: 16px;
+        }
+        
+        .youhezi .shangpian .last {
+            margin-right: 0;
+        }
+        
+        .box .youhezi .xiapian .last {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="dahezi">123</div>
+        <div class="youhezi">
+            <ul class="shangpian">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li class="last">4</li>
+            </ul>
+            <ul class="xiapian">
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li class="last">8</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
