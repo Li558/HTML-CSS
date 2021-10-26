@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        .grandfather {
+            position: absolute;
+            width: 700px;
+            height: 800px;
+            background-color: burlywood;
+            padding: 50px;
+        }
+        
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+        
+        .son {
+            position: absolute;
+            /* top: 200px;
+            left: 200px; */
+            left: 0px;
+            bottom: 0px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grandfather">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

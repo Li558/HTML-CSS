@@ -282,6 +282,7 @@ body {
 }
 
 .box-bd ul li {
+    position: relative;
     float: left;
     height: 270px;
     width: 228px;
@@ -290,7 +291,13 @@ body {
     margin-top: 15px;
 }
 
-.box-bd ul li img {
+.box-bd ul li em {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+}
+
+.box-bd ul li>img {
     width: 100%;
 }
 
