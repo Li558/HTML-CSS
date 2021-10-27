@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .w {
+            width: 520px;
+            margin: 100px auto;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .tb-promo {
+            position: relative;
+            height: 280px;
+            background-color: pink;
+        }
+        
+        .tb-promo img {
+            height: 280px;
+            width: 520px;
+        }
+        
+        .prev {
+            position: absolute;
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        .prev img {
+            width: 20px;
+            height: 30px;
+        }
+        
+        .prev,
+        .next {
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, .7);
+        }
+        
+        .next {
+            position: absolute;
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        .next img {
+            width: 20px;
+            height: 30px;
+        }
+        
+        .promo-nav {
+            position: absolute;
+            width: 70px;
+            height: 13px;
+            left: 50%;
+            margin-left: -35px;
+            bottom: 15px;
+            background-color: rgba(255, 255, 255, .7);
+            border-radius: 7px;
+        }
+        
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: pink;
+            margin: 3px;
+        }
+        /* 选择器权重问题 */
+        
+        .promo-nav .four {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo w">
+        <img src="images/pic.jpg" alt="">
+        <!-- 左侧按钮 -->
+        <a href="#" class="prev"><img src="images/arr.png"></a>
+        <!-- 右侧按钮 -->
+        <a href="#" class="next"><img src="images/arr.png"></a>
+        <!-- 小圆点 -->
+        <ul class="promo-nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="four"></li>
+            <li></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
