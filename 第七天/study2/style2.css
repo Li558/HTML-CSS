@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+
+/* <!-- 导航模块开始 --> */
+
+.header {
+    height: 42px;
+    margin: 30px;
+    /* background-color: pink; */
+    line-height: 42px;
+    text-align: center;
+}
+
+.header img {
+    float: left;
+}
+
+.header .header-ul {
+    float: left;
+}
+
+.header .header-ul li {
+    float: left;
+    margin-left: 30px;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.header .header-ul li a {
+    text-decoration: none;
+    padding: 11px;
+    color: #050505;
+}
+
+.header .header-ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.searcher {
+    float: left;
+    width: 416px;
+    height: 40px;
+    margin-left: 90px;
+    /* background-color: pink; */
+}
+
+.searcher input {
+    float: left;
+    width: 360px;
+    height: 38px;
+    font-size: 14px;
+    color: #bfbfbf;
+    border: 1px solid #00a4ff;
+}
+
+.searcher button {
+    float: left;
+    width: 50px;
+    height: 40px;
+    background: url(images/btn.png) no-repeat;
+    border: 0;
+}
+
+.user {
+    float: left;
+    width: 140px;
+    height: 42px;
+    margin-left: 26px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.user img {
+    float: left;
+    margin-top: 4px;
+}
+
+
+/* <!-- 导航模块结束 --> */
+
+
+/* <!-- 前端模块开始 --> */
+
+.bigbanner {
+    /* width: 100%; */
+    height: 420px;
+    margin-top: 30px;
+    background-color: #1c036c;
+}
+
+.bigbanner .w {
+    height: 420px;
+    background-image: url(images/banner2_20190819_210028.png);
+}
+
+.leftbanner {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(19, 1, 75, .7);
+}
+
+.leftbanner ul {
+    width: 100%;
+}
+
+.leftbanner ul li {
+    height: 40px;
+    margin: 5px 20px 0 20px;
+    line-height: 40px;
+}
+
+
+/* .last {
+    margin-bottom: 60px;
+} */
+
+.leftbanner ul li a {
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.leftbanner ul li span {
+    float: right;
+    color: #fff;
+}
+
+.leftbanner ul li:hover {
+    background-color: orange;
+    color: red;
+}
+
+.rightbanner {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #fff
+}
+
+
+/* <!-- 前端模块结束 --> */
