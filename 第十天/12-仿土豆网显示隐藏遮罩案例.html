@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tudou {
+            position: relative;
+            width: 448px;
+            height: 320px;
+            background-color: #fff;
+            margin: 30px auto;
+        }
+        /* 当鼠标经过了 该盒子  就让里面的遮罩橙显现 */
+        
+        .tudou img {
+            width: 100%;
+            height: 252px;
+        }
+        
+        .tudou::before {
+            position: absolute;
+            display: none;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .7) url(images/arr.png) no-repeat center;
+        }
+        
+        .tudou:hover::before {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tudou">
+        <img src="images/tudou.jpg" alt="">
+    </div>
+    <div class="tudou">
+        <img src="images/tudou.jpg" alt="">
+    </div>
+    <div class="tudou">
+        <img src="images/tudou.jpg" alt="">
+    </div>
+    <div class="tudou">
+        <img src="images/tudou.jpg" alt="">
+    </div>
+</body>
+
+</html>

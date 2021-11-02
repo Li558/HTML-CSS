@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 必须是input 但是同时具有value这个属性 选择这个元素 */
+        /* input[value] {
+            color: pink;
+        } */
+        /* 只选择type=text 文本框得input 选取出来 */
+        /* input[type=text] {
+            color: pink;
+        } */
+        /* 选择div 然后具有class属性 并且属性值必须是icon开头得这些元素 */
+        
+        div[class^=icon] {
+            color: red;
+        }
+        /* section 然后具有class属性 并且属性值必须是data结尾得这些元素 */
+        /* section[class$=data] {
+            color: red;
+        } */
+        /* 并且属性值必须是包含icon这些元素 */
+        /* div[class*=icon] {
+            color: blue;
+        } */
+        
+        div.icon2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--1 利用属性选择器就可以不用借助于类或者id选择器 -->
+    <!-- <input type="text" value="请输入用户名">
+    <input type="text"> -->
+    <!-- 2.属性选择器还可以选择属性=值得某些元素 -->
+    <input type="text" name="wdqdasd" id="">
+    <input type="password" name="dawdad" id="">
+    <!-- 3.属性选择器可以选择属性值开头得某些元素 -->
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon4">小图标4</div>
+    <div> 酱油</div>
+    <!-- 4. 属性选择器可以选择属性值结尾得某些元素 -->
+    <section class="icon1-data">火车</section>
+    <section class="icon2-data">气车</section>
+    <section class="icon3-ico">飞机</section>
+    <!-- 4. 属性选择器可以选择属性值中间包含得某些元素 -->
+    <div class="iconewr">小图标1</div>
+    <div class="iconwqe">小图标2</div>
+    <div class="iconefs">小图标3</div>
+    <div class="idwq4">小图标4</div>
+    <div> 酱油</div>
+</body>
+
+</html>

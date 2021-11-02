@@ -38,15 +38,13 @@ body {
 
 .header {
     height: 42px;
-    /* background-color: pink; */
     margin: 30px auto;
 }
 
 .logo {
     float: left;
     width: 198px;
-    height: 42px;
-    /* background-color: purple; */
+    /* height: 42px; */
 }
 
 .nav {
@@ -95,7 +93,7 @@ body {
 
 .search button {
     float: left;
-    width: 50px;
+    width: 51px;
     height: 42px;
     background: url(images/btn.png);
     /* 按钮button默认有个边框需要我们手动去掉 */
@@ -103,10 +101,10 @@ body {
 }
 
 .user {
-    float: left;
+    float: right;
     height: 42px;
     line-height: 42px;
-    margin-right: 20px;
+    margin-right: 80px;
     font-size: 14px;
     color: #666;
 }
@@ -127,7 +125,7 @@ body {
 .subnav {
     float: left;
     width: 190px;
-    height: 421px;
+    height: 100%;
     background-color: rgba(20, 2, 75, 0.5);
 }
 
@@ -147,10 +145,16 @@ body {
     float: right;
 }
 
-.subnav ul li a:hover {
+.subnav ul li:hover {
     color: #000;
     background-color: red;
 }
+
+
+/* .subnav ul li a:hover {
+    color: #000;
+    background-color: red;
+} */
 
 .banner .w .course {
     float: right;
@@ -167,7 +171,7 @@ body {
     text-align: center;
     line-height: 49px;
     font-size: 18px;
-    color: white;
+    color: #fff;
 }
 
 .course .bd {
@@ -353,7 +357,8 @@ body {
 }
 
 .links {
-    float: right;
+    float: left;
+    margin-left: 100px;
 }
 
 .links dl {
@@ -370,4 +375,5 @@ body {
 .links dl dd a {
     color: #333;
     font-size: 12px;
+    text-decoration: none;
 }
