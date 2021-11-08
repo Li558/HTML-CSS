@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(1000px, 0);
+            }
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 动画名称 */
+            /* animation-name: move; */
+            /* 持续时间 */
+            /* animation-duration: 2s; */
+            /* 运动曲线 */
+            /* animation-timing-function: ease; */
+            /* 延时开始 */
+            /* animation-delay: 1s; */
+            /* 重复次数   默认是1   infinite为无限次*/
+            /* animation-iteration-count: infinite; */
+            /* 是否逆向播放 默认是normal  alternate为反方向*/
+            /* animation-direction: alternate; */
+            /* 动画结束后的状态 默认的是backwards 回到起始状态  我们可以让他停留在结束状态  forwards*/
+            /* animation-fill-mode: forwards; */
+            /* 简写形式 */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* 前面两个属性name duration: 一定要写 */
+            animation: move 2s linear infinite 0s alternate forwards;
+        }
+        
+        div:hover {
+            /* 鼠标经过div  让div 停止动画  离开继续动画 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+
+    </div>
+</body>
+
+</html>
