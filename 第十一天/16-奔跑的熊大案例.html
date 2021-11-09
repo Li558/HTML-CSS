@@ -16,7 +16,7 @@
             width: 1200px;
             height: 300px;
             background: url(media/bg1.png) no-repeat;
-            animation: move 1s infinite;
+            animation: box 3s linear infinite backwards;
         }
         
         div {
@@ -36,7 +36,7 @@
                 background-position: 0 0;
             }
             100% {
-                background-position: 1600px 0;
+                background-position: -1600px 0;
             }
         }
         
@@ -53,10 +53,10 @@
         
         @keyframes box {
             0% {
-                background-position: -1200px 0;
+                background-position: 0 0;
             }
             100% {
-                background-position: 0 0;
+                background-position: -1200px 0;
             }
         }
     </style>

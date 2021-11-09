@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 透视写在父盒子上面 */
+            perspective: 200px;
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 0 auto;
+            /* transform: translateX(100px);
+            transform: translateY(100px);
+            transform: translateZ(100px); */
+            /* transform: translateX(100px) translateY(100px) translateZ(100px); */
+            /* 1 translateZ沿着Z轴移动 */
+            /* 2.translateZ后面的单位我们一般跟px */
+            /* 3. transitionZ(100px) 向外移动100px （向我们的眼睛来移动）; */
+            /* 4.3D移动有简写的方法 */
+            /* transform: translate3d(x,y,z); */
+            /* transform: translate3d(100px, 100px, 100px); */
+            /* 5.xyz不能省略  如果没有就写0 */
+            transform: translate3d(0, 100px, 100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
