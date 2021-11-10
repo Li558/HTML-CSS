@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv=" X-UA-Compatible " content="ie=edge ">
+    <title>meta试图标签</title>
+</head>
+<style>
+    div {
+        width: 500px;
+        height: 500px;
+        border: 2px solid red;
+        background: url(images/dog.jpg) no-repeat;
+        /* background-size: 宽度  高度; */
+        /* background-size: 500px 200px; */
+        /* 1 只写一个一个参数就是宽度  高度省略  随着等比例缩放 */
+        background-size: 500px;
+        /* 2 里面的单位可以% 相对于 父盒子来说 */
+        /* background-size: 50%; */
+        /* 3 cover 要完全覆盖div盒子 */
+        /* background-size: cover; */
+        /* 4 contain: 高度和宽度等比例拉伸   当宽度和高度铺满div盒子 就不再进行拉伸 可能有空白的盒子*/
+        background-size: contain;
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>

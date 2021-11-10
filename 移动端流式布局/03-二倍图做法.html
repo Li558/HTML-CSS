@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv=" X-UA-Compatible " content="ie=edge ">
+    <title>meta试图标签</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* 我们需要一个50*50像素（css像素）的图片  直接放到我们的iphone8  里面会放大2倍 100*100就会模糊 */
+    /* 采取放一个100*100图片 然后 手动把图片 50*50（css像素 ）*/
+    
+    img:nth-child(2) {
+        width: 50px;
+        height: 50px;
+    }
+</style>
+
+<body>
+    <!-- 模糊的 -->
+    <img src="images/apple50(1).jpg" alt="">
+    <!-- 采取2倍图 -->
+    <img src="images/apple100.jpg" alt="">
+</body>
+
+</html>

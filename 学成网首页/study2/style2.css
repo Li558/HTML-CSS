@@ -103,6 +103,7 @@ body {
     float: left;
     width: 140px;
     height: 42px;
+    line-height: 42px;
     margin-left: 26px;
     color: #666666;
     font-size: 14px;
@@ -110,7 +111,9 @@ body {
 
 .user img {
     float: left;
-    margin-top: 4px;
+    /* margin-top: 4px; */
+    width: 20%;
+    vertical-align: middle;
 }
 
 
