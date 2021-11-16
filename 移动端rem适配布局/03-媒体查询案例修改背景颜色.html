@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 小于540px 页面背景为蓝色  */
+        
+        @media screen and (max-width:539px) {
+            body {
+                background-color: blue;
+            }
+        }
+        /* 540-970 */
+        /* @media screen and (min-width:540px) and (max-width:969px) {
+            body {
+                background-color: green;
+            }
+        } */
+        
+        @media screen and (min-width:540px) {
+            body {
+                background-color: green;
+            }
+        }
+        /* 大于等于970 */
+        
+        @media screen and (min-width:970px) {
+            body {
+                background-color: red;
+            }
+        }
+        /* screen 还有and 必须带上不能省略 */
+        /* 数字后面必须有单位 */
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+.header a {
+  color: red;
+  text-decoration: none;
+}
+.header a:hover {
+  color: green;
+  background-color: blue;
+}
+.nav::before {
+  content: "";
+}
+.nav .logo {
+  color: green;
+}
