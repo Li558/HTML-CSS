@@ -1,0 +1,161 @@
+body{
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    height: 1200px;
+    background-color: #f2f4f7;
+    
+}
+a{
+    text-decoration: none;
+    color: #707070;
+}
+/* 如果屏幕超过了750px  就按照750设计稿来走 不让页面超过750px */
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px!important;
+    }
+}
+.warp{
+    background-color: #fff;
+    padding-bottom: 1.146667rem;
+}
+.header{
+    height: 2.133333rem;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    line-height: 2.133333rem;
+    font-size: .933333rem;
+    color: #1c1c1c;
+}
+
+.nav{
+    display: flex;
+    // 显示不开就换行
+    flex-wrap: wrap;
+    margin: 1.2rem 0 1.6rem 0;
+    .item{
+        display: flex;
+        width: 33.33%;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 3.706667rem;
+            height: 3.706667rem;
+            
+        }
+        span{
+            font-size: .666667rem;
+        }
+        &:nth-child(-n+3){
+            margin-bottom: 1.653333rem;
+        }
+    }
+
+}
+.go{
+    margin: 0 .266667rem 0 .48rem;
+}
+.content{
+    padding: 1.066667rem .64rem;
+    background-color: #fff;
+    margin-top: .266667rem;
+    .con-hd{
+        display: flex;
+        justify-content: space-between;
+        height: 1.013333rem;
+        line-height: 1.013333rem;
+        h4{
+            margin: 0;
+            font-size: .746667rem;
+            color: #333333;
+            .icon{
+                display: inline-block;
+                width: 1.013333rem;
+                height: 1.013333rem;
+                vertical-align: middle;
+            }
+        }
+        .more{
+            font-size: 22px;
+            color: #999999;
+        }
+        .get_job_focus{
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+              }
+              .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+          
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                // 竖向显示
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                transition: 300ms;
+                // 其他活动的大小
+                transform: scale(0.8);
+                a{
+                    width: 9.013333rem;
+                    height: 10.026667rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                p{
+                    width: 9.013333rem;
+                    font-size: 0.666667rem;
+                    margin-top: 0.64rem;
+                    color: #333;
+                }
+              }
+              .swiper-slide-active,
+              .swiper-slide-duplicate-active{
+                transform: scale(1);
+              }
+        }
+    }
+}
+.footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 2.933333rem;
+    width: 100%;
+    z-index: 9999;
+    padding-top: .533333rem;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    .item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 1.04rem;
+            height: 1.093333rem;
+
+        }
+        p{
+            font-size: 0.58667rem;
+            color: #666666;
+            margin-top: 0.266667rem;
+        }
+    }
+}
