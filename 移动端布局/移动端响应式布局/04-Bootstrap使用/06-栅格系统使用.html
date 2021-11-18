@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 要求当前网页使用IE浏览器最高版本的内核来渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        [class^="col"] {
+            border: .026667rem solid #ccc;
+        }
+        
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row red">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">2</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">3</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">4</div>
+        </div>
+        <!-- 如果孩子的份数等于12 -->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-2">4</div>
+        </div>
+        <!-- 如果孩子的份数小于12  则占不满整个container的宽度 会有空白-->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-1">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-2">4</div>
+        </div>
+        <!-- 如果孩子的份数大于12  则超出整个container的宽度 到下一行-->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-5">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-2">4</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 要求当前网页使用IE浏览器最高版本的内核来渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .row div {
+            height: 60px;
+            background-color: pink;
+            /* margin: 0 10px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">左侧</div>
+            <!-- 偏移的份数就是12  两个盒子的份数 =6 -->
+            <div class="col-md-3 col-md-offset-6">右侧</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">中间盒子</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
