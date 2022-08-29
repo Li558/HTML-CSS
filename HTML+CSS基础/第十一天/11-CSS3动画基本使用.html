@@ -12,10 +12,10 @@
         
         @keyframes move {
             0% {
-                transform: translate(0px);
+                transform: translate(0px,0px);
             }
             100% {
-                transform: translate(1000px);
+                transform: translate(1000px,1000px);
             }
         }
         
@@ -28,6 +28,7 @@
             animation-name: move;
             /* 动画持续时间 */
             animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
     </style>
 </head>
